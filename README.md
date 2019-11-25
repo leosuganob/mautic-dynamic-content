@@ -1,0 +1,1 @@
+# mautic-dynamic-content
