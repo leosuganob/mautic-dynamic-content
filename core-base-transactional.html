@@ -1,0 +1,27 @@
+<p style="font-size: 1px; color: transparent;">&nbsp;</p>
+<div style="display:none;">
+   {% TWIG_BLOCK %}
+   {% set order = lead.order %}
+   {% set order_items = lead.order_items %}
+   {% set item = order_items[0] %}
+   {% set customer = lead.customer %}
+   {% set email = lead.email %}
+   {% set address = lead.address %}
+   {% set phone = lead.phone %}
+   {% set order_item_details = lead.order_item_details %}
+   {% set detail = order_item_details[0] %}
+   {% set style_provider = lead.style_providers %}
+   {% set style_cobrand = lead.style_cobrand %}
+   {% if order.cobrand|lower == 'dish' %}
+      {% set provider_logo = 'https://cdn.homeperks.com/images/dish/320x96/logo.png'
+      %}
+      {% set logo_link = style_cobrand.url_site %}
+      {% set primary_color = style_cobrand.color_primary %}
+      {% set accent_color = style_cobrand.color_accent %}
+   {% else %}
+      {% set provider_logo = 'https://cdn.homeperks.com/images/' ~ item.provider ~ '/320x96/logo.png' %}
+      {% set logo_link = style_provider.providers_url_site %}
+      {% set primary_color = style_provider.providers_color_primary %}
+      {% set accent_color = style_provider.providers_color_accent %}      
+   {% endif %}
+</div>

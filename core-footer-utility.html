@@ -1,0 +1,8 @@
+<div style="color: #777!important;font-size: 0.84em;line-height:1.6; font-family: 'Roboto', 'Open Sans', Arial, Helvetica, sans-serif;">
+	<div style="display: none;">{% if style_cobrand.footer_copy %}</div>
+		{getFooterCopy}
+	<div style="display: none;">{% else %}</div>
+		<span style="line-height: 1.5em;"> This email has been sent to <strong>{{email.email}}</strong> on behalf of {{customer.first_name}} {{customer.last_name}}.<br>For inquiries, please do not reply to this email.<br>Bridgevine Inc. 2770 Indian River Blvd., Suite 400, Vero Beach, FL 32960 ©{{"now"|date("Y")}}, HomePerks. All rights reserved. </span> 
+<p><strong>{unsubscribe_text}</strong> </p>
+	<div style="display: none;">{% endif %}</div>
+</div>

@@ -1,0 +1,31 @@
+<!-- Place before start Twig Placeholder -->
+<p style="font-size: 5px; color: transparent; line-height: 0;">&nbsp;</p>
+<div style="display:none;">
+  {% TWIG_BLOCK %}
+    {% set order = lead.order %}
+    {% set order_items = lead.order_items %}
+  	{% set item = order_items[0] %}
+    {% set customer = lead.customer %}
+  	{% set email = lead.email %}
+  	{% set address = lead.address %}
+  	{% set phone = lead.phone %}
+    {% set order_item_details = lead.order_item_details %}
+    {% set detail = order_item_details[0] %}
+  	{% set style_provider = lead.style_providers %}
+	{% set style_cobrand = lead.style_cobrand %}
+  	{% if order.cobrand|lower == 'dish' %}
+  		{% set cobrand_logo = 'https://cdn.homeperks.com/images/dish/320x96/logo.png'
+  		 %}
+  	{% else %}
+  		{% set cobrand_logo = 'https://cdn.homeperks.com/images/' ~ order.cobrand|lower ~ '/320x96/logo.png'
+  		 %}
+  	{% endif %}
+	{% set header_text = 'Customer Satisfaction Survey' %}
+</div>
+
+
+<!-- Place after End Twig Placeholder -->
+<p style="font-size: 1px; color: transparent; line-height: 0;">&nbsp;</p>
+<div style="display:none;">
+  {% END_TWIG_BLOCK %}
+</div>
