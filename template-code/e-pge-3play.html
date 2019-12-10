@@ -1,0 +1,841 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths js csstransforms csstransforms3d csstransitions responsejs ">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <meta name="x-apple-disable-message-reformatting" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <style type="text/css">*{text-size-adjust:100%;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%}html{height:100%;width:100%}body{height:100%!important;margin:0!important;padding:0!important;width:100%!important;mso-line-height-rule:exactly}div[style*="margin: 16px 0"]{margin:0!important}table,td{mso-table-lspace:0;mso-table-rspace:0}img{border:0;height:auto;line-height:100%;outline:0;text-decoration:none;-ms-interpolation-mode:bicubic}.ExternalClass,.ReadMsgBody{width:100%}.ExternalClass,.ExternalClass div,.ExternalClass p,.ExternalClass span,.ExternalClass td{line-height:100%}</style>
+      <style type="text/css">
+         @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+         ReadMsgBody{ width: 100%;}
+         .ExternalClass {width: 100%;}
+         .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+         body {-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;margin:0 !important; color: #ffffff;}
+         .applelinks{ color:#444444; text-decoration: none;}
+         .ii a[href]{ color: #b9b9b9; }
+         p { margin: 1em 0;}
+         table td { border-collapse: collapse;}
+         img {outline:0;}
+         a img {border:none;}
+         p {margin: 1em 0;}
+         table.mobilebanner,
+         .footer-mobile {
+         display:none !important; 
+         font-size:0; 
+         line-height:0; 
+         mso-hide: all;
+         max-height: 0; 
+         max-width: 0; 
+         width:0;
+         }
+         @-ms-viewport{ width: device-width;}
+      </style>
+      <style type="text/css">
+         @media only screen and (max-width: 480px) {
+         .container {width: 100% !important;}
+         .footer { width:auto !important; margin-left:0; }
+         .content-padding{ padding:4px !important; }
+         .mobile-hidden { display:none !important; }
+         .logo { display:block !important; padding:0 !important; }
+         /* img { max-width:100% !important; height:auto !important; max-height:auto !important;} */
+         .photo img { width:100% !important; max-width:100% !important; height:auto !important;}
+         .drop { display:block !important; width: 100% !important; float:left; clear:both;}
+         .footerlogo { display:block !important; width: 100% !important; padding-top:15px; float:left; clear:both;}
+         .nav4, .nav5, .nav6 { display: none !important; }
+         .tableBlock {width:100% !important;}
+         .responsive-td {width:100% !important; display:block !important; padding:0 !important; }
+         .fluid, .fluid-centered {
+         width: 100% !important;
+         max-width: 100% !important;
+         height: auto !important;
+         margin-left: auto !important;
+         margin-right: auto !important;
+         }
+         .fluid-centered {
+         margin-left: auto !important;
+         margin-right: auto !important;
+         }
+         /* MOBILE GLOBAL STYLES - DO NOT CHANGE */
+         body { padding: 0px !important; font-size: 16px !important; line-height: 150% !important;}
+         h1 { font-size: 22px !important; line-height: normal !important;}
+         h2 { font-size: 20px !important; line-height: normal !important;}
+         h3 { font-size: 18px !important; line-height: normal !important;}
+         .buttonstyles {
+         font-family:tahoma,helvetica,sans-serif !important;
+         font-size: 16px !important;
+         color: #FFFFFF !important;
+         padding: 10px !important;
+         }
+         /* END OF MOBILE GLOBAL STYLES - DO NOT CHANGE */
+         }
+         @media only screen and (max-width: 640px) {
+         .container { width:100% !important; }
+         .mobile-hidden { display:none !important; }
+         .logo { display:block !important; padding:0 !important; }
+         .photo img { width:100% !important; height:auto !important;}
+         .nav5, .nav6 { display: none !important;}
+         .fluid, .fluid-centered {
+         width: 100% !important;
+         max-width: 100% !important;
+         height: auto !important;
+         margin-left: auto !important;
+         margin-right: auto !important;
+         }
+         .fluid-centered {
+         margin-left: auto !important;
+         margin-right: auto !important;
+         }
+         }
+         @media only screen and (max-width:680px) {
+         .centerHeaderXS {
+         margin: auto;
+         }
+         .header img{
+         max-width:100% !important;
+         height:auto !important;
+         max-height:auto !important;
+         }
+         img[class="logo"] {
+         max-width: 180px !important;
+         height: auto !important;
+         display: block !important;
+         overflow: hidden !important;
+         width: 110px !important;
+         }
+         *[class="FlexWidth100"] {
+         width: 100% !important;
+         height: auto !important;
+         }
+         img[class="ImageWidth100"] {
+         width: 100% !important;
+         height: auto !important;
+         line-height: normal !important;
+         }
+         *[class="Split"] {
+         width: 100%!important;
+         max-width: none!important;
+         }
+         *[class="tableCenter"] {
+         margin-left: auto!important;
+         margin-right: auto!important;
+         }
+         *[class="textCenter"] {
+         text-align: center!important;
+         }
+         td[class="Email-Canvas"] {
+         padding: 0px 0px 0px 0px!important;
+         }
+         td[class="mainContent1"] {
+         padding: 0px 15px 15px 15px!important;
+         }
+         *[class="headerSlogan"] {
+         padding: 0px !important;
+         text-align: center !important;
+         }
+         *[class="btnContent1"] {
+         padding: 0px !important;
+         }
+         *[class="HideXs"] {
+         display: none !important;
+         overflow: hidden;
+         float: left;
+         line-height: 0px;
+         }
+         table.HideXs,
+         table.gifbanner,
+         table.pngbanner {
+         display: none !important;
+         overflow:hidden;
+         float:left; 
+         line-height:0px;
+         }
+         table.expandXs {
+         width: 95% !important;
+         }
+         table tr td.centerXs {
+         text-align: center !important;
+         }
+         table tr td.centerXs .table-center {
+         margin: auto;
+         }
+         *[class="VisibleXs"],
+         table.mobilebanner,
+         img.footer-mobile,
+         table.display-mobile {
+         width: 100% !important;
+         max-width: 100% !important;
+         height: auto !important;
+         max-height: 100% !important;
+         display: block !important;
+         overflow: Hidden !important;
+         visibility: visible !important;
+         line-height: normal !important;
+         opacity: 1 !important;
+         }
+         table.display-mobile {
+         display: table !important;
+         }
+         *[class="paddingXs"] {
+         padding: 0 20px;
+         }
+         *[class="centerXs"] {
+         margin: auto;
+         }
+         img.footer-desktop {
+         display:none !important; 
+         font-size:0; 
+         line-height:0; 
+         mso-hide: all;
+         max-height: 0; 
+         max-width: 0; 
+         width:0;
+         }
+         .email-content-area {
+         padding-left: 20px !important;
+         padding-right: 20px !important;
+         }
+         .blockImgXs {
+         float: none !important;
+         display: block;
+         margin: auto;
+         }
+         }
+      </style>
+      <title>{subject}</title>
+   </head>
+   <!--[if !mso]><!----> 
+   <!--<![endif]--> 
+   <!--[if gte mso 9]>
+   <style type="text/css">
+      li { text-indent: -1em; }
+      table td { border-collapse: collapse; }
+   </style>
+   <![endif]--> 
+   <!--[if mso]>         
+   <style type="”text/css”">         .fallback-font {            font-family: Arial, sans-serif !important;         }         img.footer-mobile {           display:none !important;            font-size:0;            line-height:0;            mso-hide: all;           max-height: 0;            max-width: 0;            width:0;         }     </style>
+   <![endif]-->
+   <!--[if mso]>       
+   <style type="text/css">           /* Begin Outlook Font Fix */           body, table, td {               font-family: Arial, Helvetica, sans-serif ;               font-size:16px;               color:#808080;               line-height:1;           }           /* End Outlook Font Fix */       </style>
+   <![endif]-->
+   <!-- content -->  <!--[if gte mso 9]>
+   <xml>
+      <o:OfficeDocumentSettings>
+         <o:AllowPNG/>
+         <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+   </xml>
+   <![endif]--> 
+   <body class="body ui-sortable" bgcolor="#f8f8f8" text="#808080" style="color: rgb(128, 128, 128); margin: 0px; padding-top: 20px; text-size-adjust: none; line-height: normal; font-size: 14px; font-family: tahoma, helvetica, sans-serif; background-color: rgb(248, 248, 248); cursor: auto; overflow: visible;">
+      <table class="bodyTable" role="presentation" width="100%" align="left" border="0" cellpadding="0" cellspacing="0" style="width:100%;margin:0">
+         <tbody>
+            <tr>
+               <td data-section-wrapper="1">
+                  <div data-slot-container="1" class="ui-sortable">
+                     <div data-slot="codemode">
+                        <div class="codemodeHtmlContainer">
+                           <!-- Place before start Twig Placeholder -->
+                           <p style="font-size: 5px; color: transparent; line-height: 0;"> </p>
+                           <div style="display:none;">
+                              {% TWIG_BLOCK %}
+                              {% set order = lead.order %}
+                              {% set order_items = lead.order_items %}
+                              {% set item = order_items[0] %}
+                              {% set customer = lead.customer %}
+                              {% set email = lead.email %}
+                              {% set address = lead.address %}
+                              {% set phone = lead.phone %}
+                              {% set order_item_details = lead.order_item_details %}
+                              {% set detail = order_item_details[0] %}
+                              {% set style_provider = lead.style_providers %}
+                              {% set style_cobrand = lead.style_cobrand %}
+                              {% if order.cobrand|lower == 'dish' %}
+                              {% set cobrand_logo = 'https://cdn.homeperks.com/images/dish/320x96/logo.png'
+                              %}
+                              {% else %}
+                              {% set cobrand_logo = 'https://cdn.homeperks.com/images/' ~ order.cobrand|lower ~ '/320x96/logo.png'
+                              %}
+                              {% endif %}
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td class="body__content" align="left" width="100%" valign="top" style="color:#000;font-family:Helvetica,Arial,sans-serif;font-size:16px;line-height:20px; background-color: #f8f8f8">
+                  <div data-slot-container="" class="ui-sortable">
+                     <!-- Header (Logo/CTA) -->
+                     <table cellpadding="0" cellspacing="0" class="stylingblock-content-wrapper" width="680" style="max-width: 100%; width: 680px; background-color: transparent; min-width: 100%; margin-top: 15px; margin-bottom: 15px">
+                        <tbody>
+                           <tr>
+                              <td class="stylingblock-content-wrapper camarker-inner" style="padding: 0px; ">
+                                 <table cellpadding="0" cellspacing="0" style="width: 100%;">
+                                    <tbody>
+                                       <tr>
+                                          <td>
+                                             <table border="0" cellpadding="10" cellspacing="0" class="hide-desktop display-mobile" style="display: none" width="680" align="center">
+                                                <tbody>
+                                                   <!-- <tr>
+                                                      <td align="center" class="fallback-font" style="font-size: 11px; font-weight: 400; font-family: 'Roboto', 'Open Sans', Arial, Helvetica, sans-serif; vertical-align:bottom;" valign="bottom">
+                                                         Can't see images? <a href="http://view.email.homeperks.com/?qs=1f602684df4beddc5eeb9f5d8ca017232127feed2e6d3ee400756a716b63cc7e463c5db2c951fc3a66f494232a68a86a5423c292d1aa6bd5" style="color:inherit;" target="_blank">View in browser.</a>
+                                                      </td>
+                                                      </tr> -->
+                                                   <tr>
+                                                      <td align="center" class="fallback-font" style="font-size: 16px; font-weight: 400; font-family: 'Roboto', 'Open Sans', Arial, Helvetica, sans-serif; vertical-align:bottom;color:#000;padding-top:5px" valign="bottom">
+                                                      </td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td data-section-wrapper="1">
+                                             <table cellpadding="0" cellspacing="0" width="680" align="center">
+                                                <tbody>
+                                                   <tr>
+                                                      <td class="responsive-td centerXs ui-sortable" style="width: 60%; padding-right: 0px;" valign="top" data-slot-container="1">
+                                                         <table cellpadding="0" cellspacing="0" class="header-logos table-center">
+                                                            <tbody>
+                                                               <tr>
+                                                                  <td>
+                                                                     <a href="https://homeperks.com/" target="_blank"><img alt="Homeperks" height="40" src="https://i.ibb.co/p23sHNW/header-brand-logo.png" style="height:40px;width: auto;padding:0;color:#808080;font-weight:bold;vertical-align:bottom;" width="auto" /> </a>
+                                                                  </td>
+                                                                  <td>
+                                                                     <div data-slot="codemode">
+                                                                        <div class="codemodeHtmlContainer">
+                                                                           <div style="display:none;">{% if cobrand_logo %}</div>
+                                                                           <table cellpadding="0" cellspacing="0">
+                                                                              <tbody>
+                                                                                 <tr>
+                                                                                    <td style="padding:0 20px">
+                                                                                       <img class="header-spacer" height="56" src="https://spacergif.org/e4e4e4.gif" style="height: 56px!important" width="2" />
+                                                                                    </td>
+                                                                                    <td>
+                                                                                       <a href="{{style_cobrand.url_site_rs}}" target="_blank"><img height="40" src="{{cobrand_logo}}" style="height: 40px;width: auto;padding:0;color:#808080;font-weight:bold;vertical-align:bottom;" width="auto" /> </a>
+                                                                                    </td>
+                                                                                 </tr>
+                                                                              </tbody>
+                                                                           </table>
+                                                                           <div style="display:none">{% endif %}</div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </td>
+                                                               </tr>
+                                                            </tbody>
+                                                         </table>
+                                                      </td>
+                                                      <td class="responsive-td" style="width: 40%; padding-left: 0px;" valign="middle">
+                                                         <table cellpadding="0" cellspacing="0" class="stylingblock-content-wrapper mobile-hidden" style="background-color: transparent; min-width: 100%; " width="100%">
+                                                            <tbody>
+                                                               <tr>
+                                                                  <td class="stylingblock-content-wrapper mobile-hidden camarker-inner">
+                                                                     <table border="0" cellpadding="0" cellspacing="0" class="HideXs ui-sortable" width="100%" data-slot-container="1">
+                                                                        <tbody>
+                                                                           <!-- <tr>
+                                                                              <td align="right" class="fallback-font" style="font-size: 11px; font-weight: 400; font-family: 'Roboto', 'Open Sans', Arial, Helvetica, sans-serif; float:right; vertical-align:bottom;" valign="bottom">
+                                                                                 Can't see images? <a href="http://view.email.homeperks.com/?qs=1f602684df4beddc5eeb9f5d8ca017232127feed2e6d3ee400756a716b63cc7e463c5db2c951fc3a66f494232a68a86a5423c292d1aa6bd5" style="color:inherit;" target="_blank">View in browser.</a>
+                                                                              </td>
+                                                                              </tr> -->
+                                                                           <tr>
+                                                                              <td class="fallback-font" style="font-size: 16px; font-weight: 400; font-family: 'Roboto', 'Open Sans', Arial, Helvetica, sans-serif; float:right; vertical-align:bottom;color:#000;padding-top:5px" valign="bottom" data-slot="text">{{header_text}}</td>
+                                                                           </tr>
+                                                                        </tbody>
+                                                                     </table>
+                                                                  </td>
+                                                               </tr>
+                                                            </tbody>
+                                                         </table>
+                                                      </td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <!-- End Header (Logo/CTA) -->
+                  </div>
+                  <div data-slot-container="" class="ui-sortable">
+                     <table width="680" align="center" bgcolor="#ffffff" cellspacing="0" cellpadding="0" style="margin-bottom:50px;">
+                        <tbody>
+                           <tr>
+                              <td align="center">
+                                 <div style="max-width: 680px">
+                                    <table cellpadding="0" cellspacing="0" border="0" data-section-wrapper="1" width="100%">
+                                       <tbody>
+                                          <tr>
+                                             <td data-slot-container="1" class="ui-sortable">
+                                                <table cellpadding="0" cellspacing="0" border="0">
+                                                   <tbody>
+                                                      <tr>
+                                                         <td>
+                                                         </td>
+                                                      </tr>
+                                                   </tbody>
+                                                </table>
+                                                <div data-slot="codemode">
+                                                   <div class="codemodeHtmlContainer">
+                                                      <table cellpadding="0" cellspacing="0" width="100%" style="background-color: #DCEEF2; min-width: 100%;">
+                                                         <tbody>
+                                                            <tr>
+                                                               <td style="padding: 0px; " class="stylingblock-content-wrapper camarker-inner">
+                                                                  <!-- START HERO -->
+                                                                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                     <tbody>
+                                                                        <tr>
+                                                                           <td align="left" valign="top">
+                                                                              <table align="left" border="0" cellpadding="0" cellspacing="0" class="row expandXs marginXs" width="312">
+                                                                                 <tbody>
+                                                                                    <tr>
+                                                                                       <td align="left" style="padding: 10px 20px 0px 20px;" valign="top">
+                                                                                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                                             <tbody>
+                                                                                                <tr>
+                                                                                                   <td align="left" class="text-center" style="color: #006DB8; font-size: 28px; line-height: 1.2em; font-weight: 400; font-family: Trebuchet MS, Arial, Helvetica, sans-serif; padding-top: 5px;" valign="top">
+                                                                                                      You're moving, we can help you save on your internet services.
+                                                                                                   </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                   <td align="left" class="text-center" style="padding-top: 15px;" valign="top">
+                                                                                                      <table border="0" cellpadding="0" cellspacing="0" class="table-center" width="90">
+                                                                                                         <tbody>
+                                                                                                            <tr>
+                                                                                                               <td bgcolor="#006DB8" height="2" style="font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;">
+                                                                                                               </td>
+                                                                                                            </tr>
+                                                                                                         </tbody>
+                                                                                                      </table>
+                                                                                                   </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                   <td align="left" class="text-center centerXS" style="color: #293648; font-size: 18px; line-height: 1.4em; font-weight: 400; font-family: Arial, Helvetica, sans-serif; padding-top: 20px;" valign="top">
+                                                                                                      It's fast & easy to shop and save.
+                                                                                                   </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                   <td style="font-size=0px;">
+                                                                                                   </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                   <td align="left" class="text-center" style="padding-top: 15px;" valign="top">
+                                                                                                      <!-- Button -->
+                                                                                                      <table border="0" cellpadding="0" cellspacing="0" class="table-center">
+                                                                                                         <tbody>
+                                                                                                            <tr>
+                                                                                                               <td align="center" bgcolor="#5EB445" style="padding: 12px 35px 12px 35px;" valign="middle">
+                                                                                                                  <a alias="" conversion="true" data-linkto="https://" href="{{style_cobrand.url_site}}/shop/tv/?{{style_cobrand.cobrand_pid}}&utm_source={{order.cobrand}}&utm_medium=email&utm_campaign=commercial&utm_content=hero&utm_topic=3play-retouch&utm_cta=url-3play&bvconf={{order.bv_confirmation_num}}" name="internet 1" style="color:#FFFFFF;text-decoration:none; font-size: 19px; line-height: 1.3em; font-weight: 400; font-family: Trebuchet MS, Arial, Helvetica, sans-serif;" target="_blank" title="internet 1">Get Started</a>
+                                                                                                               </td>
+                                                                                                            </tr>
+                                                                                                         </tbody>
+                                                                                                      </table>
+                                                                                                      <!-- /Button -->
+                                                                                                   </td>
+                                                                                                </tr>
+                                                                                             </tbody>
+                                                                                          </table>
+                                                                                       </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                       <td style="font-size=0px;">
+                                                                                       </td>
+                                                                                    </tr>
+                                                                                 </tbody>
+                                                                              </table>
+                                                                              <!--[if gte mso 9]>
+                                                                           </td>
+                                                                           <td width="330" align="right" valign="top">
+                                                                              <![endif]-->
+                                                                              <table align="right" border="0" cellpadding="0" cellspacing="0" class="row HideXs" width="333">
+                                                                                 <tbody>
+                                                                                    <tr>
+                                                                                       <td align="left" valign="top">
+                                                                                          <div style="font-size: 0; line-height: 0;">
+                                                                                             <img alt="There's still time to save on your internet" class="HideXs" data-assetid="44382" height="353" src="https://i.ibb.co/Y8WmW7n/3play-banner.jpg" style="display: block; outline: none; padding: 0px; text-align: center; height: 353px; width: 333px; border: none;" width="333" />
+                                                                                          </div>
+                                                                                       </td>
+                                                                                    </tr>
+                                                                                 </tbody>
+                                                                              </table>
+                                                                           </td>
+                                                                        </tr>
+                                                                     </tbody>
+                                                                  </table>
+                                                                  <!-- END HERO -->
+                                                               </td>
+                                                            </tr>
+                                                         </tbody>
+                                                      </table>
+                                                   </div>
+                                                </div>
+                                                <div data-slot="codemode">
+                                                   <div class="codemodeHtmlContainer">
+                                                      <div style="padding: 20px; padding-bottom: 0">
+                                                         <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; ">
+                                                            <tbody>
+                                                               <tr>
+                                                                  <td class="stylingblock-content-wrapper camarker-inner">
+                                                                     <img class="blockImgXs" height="161" src="https://i.ibb.co/DbCwNNd/3play-content.jpg" style="padding: 10px 10px 10px 0px; text-align: left; height: 161px; width: 250px; float: left; border: 0px;" width="250" />
+                                                                     <div style="font-size:13px;color:#293648;line-height:1.4em;display:inline;">
+                                                                        <p style="color:#006DB8;font-size:16px;">
+                                                                           {{customer.first_name}}, there's still time to get a great deal on<br />
+                                                                           Internet, TV and Phone services!
+                                                                        </p>
+                                                                        <p>
+                                                                           {{order.cobrand|upper}} <span style="color:#006DB8;"><b>HomePerks</b></span> is a team of people who <i>literally</i> eats, sleeps, and breathes thinking only about moving and home subscription services (well, maybe not all the time). But seriously, they are super into saving money and time. They are focused on making your move and purchase of home subscription services easy, simple, and stress-free. HomePerks has big partnerships with both utilities and major product providers.
+                                                                        </p>
+                                                                        <p>
+                                                                           HomePerks has served millions of customers over the past 13 years, just like you. You are guaranteed the best deal for the services you are looking for!
+                                                                        </p>
+                                                                     </div>
+                                                                  </td>
+                                                               </tr>
+                                                            </tbody>
+                                                         </table>
+                                                         <table cellpadding="0" cellspacing="0" width="100%" class="stylingblock-content-wrapper" style="min-width: 100%; ">
+                                                            <tbody>
+                                                               <tr>
+                                                                  <td class="stylingblock-content-margin-cell" style="padding: 20px 0px 0px; ">
+                                                                     <table cellpadding="0" cellspacing="0" width="100%" style="background-color: #EAEAEA; min-width: 100%; " class="stylingblock-content-wrapper">
+                                                                        <tbody>
+                                                                           <tr>
+                                                                              <td style="padding: 10px; " class="stylingblock-content-wrapper camarker-inner">
+                                                                                 <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                                    <tbody>
+                                                                                       <tr>
+                                                                                          <td align="left" style="color: #000000; font-size: 13px; line-height: 1.6em; font-weight: 400; font-family: Arial, Helvetica, sans-serif; text-transform: uppercase;" valign="top">
+                                                                                             <strong style="font-weight: 700;">Related Stories</strong>
+                                                                                          </td>
+                                                                                       </tr>
+                                                                                       <tr>
+                                                                                          <td align="left" style="padding-top: 10px;" valign="top">
+                                                                                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                                                <tbody>
+                                                                                                   <tr>
+                                                                                                      <td align="center" valign="top">
+                                                                                                         <table border="0" cellpadding="0" cellspacing="0">
+                                                                                                            <tbody>
+                                                                                                               <tr>
+                                                                                                                  <td class="responsive-td" width="130">
+                                                                                                                     <a alias="" conversion="false" data-linkto="https://" href="https://{{style_cobrand.domain}}/connect/how-to-decide-what-internet-speed-you-need/?{{style_cobrand.cobrand_pid}}&utm_source={{order.cobrand|lower}}&utm_medium=Email&utm_campaign=PGE&utm_content=tprt" target="_blank" title=""><img alt="How fast is your current internet?" class="centerXs" data-assetid="45454" height="87" src="https://i.ibb.co/27ZdmXR/3play-news.jpg" style="display: block; outline: none; padding: 0px; text-align: center; height: 87px; width: 130px; border: none;" width="130" /></a>
+                                                                                                                  </td>
+                                                                                                                  <td class="responsive-td" style="color: #000000; font-size: 13px; font-weight: 400; font-family: Arial, Helvetica, sans-serif; padding-left: 15px" valign="top">
+                                                                                                                     <table align="right" border="0" cellpadding="0" cellspacing="0" class="row expandXs" width="485">
+                                                                                                                        <tbody>
+                                                                                                                           <tr>
+                                                                                                                              <td align="left" style="color: #000000; font-size: 16px; line-height: 1.4em; font-weight: 400; font-family: Arial, Helvetica, sans-serif;" valign="top">
+                                                                                                                                 <strong style="font-weight: 700;">How to Decide What Speed You Need</strong>
+                                                                                                                              </td>
+                                                                                                                           </tr>
+                                                                                                                           <tr>
+                                                                                                                              <td align="left" style="color: #000000; font-size: 14px; line-height: 1.4em; font-weight: 400; font-family: Arial, Helvetica, sans-serif; padding-top: 10px;" valign="top">
+                                                                                                                                 Finding the right Internet speed is a balance between deciding how much you need and ...
+                                                                                                                              </td>
+                                                                                                                           </tr>
+                                                                                                                           <tr>
+                                                                                                                              <td align="left" style="color: #c2c2c2; font-size: 14px; line-height: 1.4em; font-weight: 400; font-family: Arial, Helvetica, sans-serif;" valign="top">
+                                                                                                                                 <a href="https://{{style_cobrand.domain}}/connect/how-to-decide-what-internet-speed-you-need/?{{style_cobrand.cobrand_pid}}&utm_source={{order.cobrand|lower}}&utm_medium=Email&utm_campaign=PGE&utm_content=tprt" name="Article 1" style="color: #0089c4; text-decoration:underline;" target="_blank"><em>read article</em></a> <!-- |  <a href="{{style_cobrand.url_site}}/tips/internet/any/us/all/how-to-decide-what-internet-speed-you-need/?{{style_cobrand.cobrand_pid}}&utm_source={{order.cobrand|lower}}&utm_medium=Email&utm_campaign=PGE&utm_content=tprt" name="Speed Test" style="color: #0089c4; text-decoration:underline;" target="_blank"><em>Internet speed test</em></a>-->
+                                                                                                                              </td>
+                                                                                                                           </tr>
+                                                                                                                        </tbody>
+                                                                                                                     </table>
+                                                                                                                  </td>
+                                                                                                               </tr>
+                                                                                                            </tbody>
+                                                                                                         </table>
+                                                                                                      </td>
+                                                                                                   </tr>
+                                                                                                </tbody>
+                                                                                             </table>
+                                                                                          </td>
+                                                                                       </tr>
+                                                                                    </tbody>
+                                                                                 </table>
+                                                                              </td>
+                                                                           </tr>
+                                                                        </tbody>
+                                                                     </table>
+                                                                  </td>
+                                                               </tr>
+                                                            </tbody>
+                                                         </table>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div data-slot="codemode" style="position: relative; left: 0px; top: 0px;" class="">
+                                                   <div class="codemodeHtmlContainer">
+                                                      <div style="padding: 20px;">
+                                                         <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; ">
+                                                            <tbody>
+                                                               <tr>
+                                                                  <td>
+                                                                     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                        <tbody>
+                                                                           <tr>
+                                                                              <td align="center">
+                                                                                 <table border="0" cellspacing="0" cellpadding="0">
+                                                                                    <tbody>
+                                                                                       <tr>
+                                                                                          <td class="innertd buttonblock" bgcolor="#5EB445" style="border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px; background-color: #5EB445;"><a target="_blank" class="buttonstyles" style="font-size: 18px; font-family: Arial, Helvetica, sans-serif;color: #ffffff;text-align:center; text-decoration: none; display: block; background-color: #5eb445;border: 1px solid transparent; padding:10px 20px; border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius:0px;" href="{{style_cobrand.url_site}}/shop/tv?{{style_cobrand.cobrand_pid}}&utm_source={{order.cobrand|lower}}&utm_medium=email&utm_campaign=commercial&utm_content=button-2&utm_topic=3play-retouch&utm_cta=url-3play&bvconf={{order.bv_confirmation_num}}" title="" alias="" conversion="false" data-linkto="other">Start saving today!</a></td>
+                                                                                       </tr>
+                                                                                    </tbody>
+                                                                                 </table>
+                                                                              </td>
+                                                                           </tr>
+                                                                        </tbody>
+                                                                     </table>
+                                                                  </td>
+                                                               </tr>
+                                                            </tbody>
+                                                         </table>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div data-slot-container="" class="ui-sortable">
+                     <table cellspacing="0" cellpadding="0" border="0" width="100%" class="container" align="center">
+                        <tbody>
+                           <tr>
+                              <td class="stylingblock-content-wrapper camarker-inner" style="padding-top: 0px;">
+                                 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="position: relative; bottom: -10px; mso-hide:all; background-color: #f8f8f8" bgcolor="#f8f8f8">
+                                    <tbody>
+                                       <tr>
+                                          <td>
+                                             <img alt="HomePerks" border="0" width="100%" src="https://i.ibb.co/NZk74ND/footer-houses-desktop.png" class="footer-desktop" style="width: 100%; max-width: 100%; border-width: 0; display: block;" />
+                                             <img alt="HomePerks" border="0" width="100%" src="https://i.ibb.co/4PVfbDf/footer-houses-mobile.png" class="footer-mobile" style="width: 100%; max-width: 100%; border-width: 0; display: none;" />
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td bgcolor="#e3e8ea">
+                                 <table align="center" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;" width="680" class="expandXs">
+                                    <tbody>
+                                       <tr>
+                                          <td>
+                                             <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper">
+                                                <tbody>
+                                                   <tr>
+                                                      <td class="stylingblock-content-wrapper camarker-inner">
+                                                         <table cellpadding="0" cellspacing="0" width="100%" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper">
+                                                            <tbody>
+                                                               <tr>
+                                                                  <td style="padding: 0px 10px; " class="stylingblock-content-wrapper camarker-inner">
+                                                                     <!-- Footer Content -->
+                                                                     <table border="0" cellpadding="0" cellspacing="0" style="align-content: center;" width="100%">
+                                                                        <tbody>
+                                                                           <tr>
+                                                                              <td align="center" class="paddingXs">
+                                                                                 <table cellpadding="0" cellspacing="0" class="stylingblock-content-wrapper" style="min-width: 100%; " width="100%">
+                                                                                    <tbody>
+                                                                                       <tr>
+                                                                                          <td class="stylingblock-content-wrapper camarker-inner" style="padding: 30px 0; padding-bottom: 0; ">
+                                                                                             <table cellpadding="0" cellspacing="0" style="width: 100%;">
+                                                                                                <tbody>
+                                                                                                   <tr>
+                                                                                                      <td data-section-wrapper="1">
+                                                                                                         <table cellpadding="0" cellspacing="0" style="width: 100%;">
+                                                                                                            <tbody>
+                                                                                                               <tr>
+                                                                                                                  <td class="responsive-td" style="width: 260px; padding-right: 3px;" valign="top">
+                                                                                                                     <table cellpadding="0" cellspacing="0" class="stylingblock-content-wrapper" style="min-width: 100%; " width="100%">
+                                                                                                                        <tbody>
+                                                                                                                           <tr>
+                                                                                                                              <td class="stylingblock-content-wrapper camarker-inner">
+                                                                                                                                 <table>
+                                                                                                                                    <tbody>
+                                                                                                                                       <tr>
+                                                                                                                                          <td style="padding-top: 10%;">
+                                                                                                                                             <img alt="HomePerks" class="centerXs" height="45px" style="max-height: 100%; height: 45px; width: auto;" src="https://cdn.homeperks.com/images/homeperks/320x96/logo-rev.png" />
+                                                                                                                                          </td>
+                                                                                                                                       </tr>
+                                                                                                                                    </tbody>
+                                                                                                                                 </table>
+                                                                                                                              </td>
+                                                                                                                           </tr>
+                                                                                                                        </tbody>
+                                                                                                                     </table>
+                                                                                                                  </td>
+                                                                                                                  <td class="responsive-td ui-sortable" valign="top" data-slot-container="1">
+                                                                                                                     <table cellpadding="0" cellspacing="0" class="stylingblock-content-wrapper" style="min-width: 100%; " width="100%">
+                                                                                                                        <tbody>
+                                                                                                                           <tr>
+                                                                                                                              <td class="stylingblock-content-wrapper camarker-inner">
+                                                                                                                                 <div data-slot="codemode">
+                                                                                                                                    <div class="codemodeHtmlContainer">
+                                                                                                                                       <div style="color: #777!important;font-size: 0.84em;line-height:1.6; font-family: 'Roboto', 'Open Sans', Arial, Helvetica, sans-serif;">
+                                                                                                                                          <div style="display: none;">{% if style_cobrand.footer_copy %}</div>
+                                                                                                                                          {getFooterCopy}
+                                                                                                                                          <div style="display: none;">{% else %}</div>
+                                                                                                                                          <span style="line-height: 1.5em;"> This email has been sent to <strong>{{email.email}}</strong> on behalf of {{customer.first_name}} {{customer.last_name}}.<br />For inquiries, please do not reply to this email.<br />Bridgevine Inc. 2770 Indian River Blvd., Suite 400, Vero Beach, FL 32960 ©{{"now"|date("Y")}}, HomePerks. All rights reserved. </span> 
+                                                                                                                                          <p><strong>{unsubscribe_text}</strong> </p>
+                                                                                                                                          <div style="display: none;">{% endif %}</div>
+                                                                                                                                       </div>
+                                                                                                                                    </div>
+                                                                                                                                 </div>
+                                                                                                                                 <table>
+                                                                                                                                    <tbody>
+                                                                                                                                       <tr>
+                                                                                                                                       </tr>
+                                                                                                                                    </tbody>
+                                                                                                                                 </table>
+                                                                                                                                 <table>
+                                                                                                                                 </table>
+                                                                                                                              </td>
+                                                                                                                           </tr>
+                                                                                                                        </tbody>
+                                                                                                                     </table>
+                                                                                                                  </td>
+                                                                                                               </tr>
+                                                                                                            </tbody>
+                                                                                                         </table>
+                                                                                                      </td>
+                                                                                                   </tr>
+                                                                                                </tbody>
+                                                                                             </table>
+                                                                                          </td>
+                                                                                       </tr>
+                                                                                    </tbody>
+                                                                                 </table>
+                                                                              </td>
+                                                                           </tr>
+                                                                           <!-- End Footer Content -->
+                                                                        </tbody>
+                                                                     </table>
+                                                                  </td>
+                                                               </tr>
+                                                            </tbody>
+                                                         </table>
+                                                         <table cellspacing="0" cellpadding="0" width="680" data-section-wrapper="1">
+                                                            <tbody>
+                                                               <tr>
+                                                                  <td data-slot-container="1" width="100%" class="ui-sortable">
+                                                                     <div data-slot="codemode">
+                                                                        <div class="codemodeHtmlContainer">
+                                                                           <div style="display:none">{% if (style_cobrand.disclaimer_1 or style_cobrand.disclaimer_2) %}</div>
+                                                                           <table align="center" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed; margin-bottom: 50px" width="680" class="expandXs">
+                                                                              <tbody>
+                                                                                 <tr>
+                                                                                    <td>
+                                                                                       <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper">
+                                                                                          <tbody>
+                                                                                             <tr>
+                                                                                                <td class="stylingblock-content-wrapper camarker-inner">
+                                                                                                   <!-- Footer Disclaimer -->
+                                                                                                   <hr style="margin: 30px 0; height: 1px; border: 0; border-bottom: 1px solid #777" />
+                                                                                                   <table border="0" cellpadding="0" cellspacing="0" style="align-content: center;" width="100%">
+                                                                                                      <tbody>
+                                                                                                         <tr>
+                                                                                                            <td align="center" class="paddingXs">
+                                                                                                               <table cellpadding="0" cellspacing="0" class="stylingblock-content-wrapper" style="min-width: 100%; " width="100%">
+                                                                                                                  <tbody>
+                                                                                                                     <tr>
+                                                                                                                        <td class="stylingblock-content-wrapper camarker-inner" style="padding-top: 0; ">
+                                                                                                                           <table cellpadding="0" cellspacing="0" style="width: 100%;">
+                                                                                                                              <tbody>
+                                                                                                                                 <tr>
+                                                                                                                                    <td>
+                                                                                                                                       <table cellpadding="0" cellspacing="0" style="width: 100%;">
+                                                                                                                                          <tbody>
+                                                                                                                                             <tr>
+                                                                                                                                                <td class="responsive-td" style="width: 100%;" valign="top">
+                                                                                                                                                   <table cellpadding="0" cellspacing="0" class="stylingblock-content-wrapper" style="min-width: 100%; " width="100%">
+                                                                                                                                                      <tbody>
+                                                                                                                                                         <tr>
+                                                                                                                                                            <td class="stylingblock-content-wrapper camarker-inner">
+                                                                                                                                                               <table>
+                                                                                                                                                                  <tbody>
+                                                                                                                                                                     <tr>
+                                                                                                                                                                        <td class="fallback-font" style="color: #777!important;font-size: 0.7em;line-height:1.6; font-family: 'Roboto', 'Open Sans', Arial, Helvetica, sans-serif;">
+                                                                                                                                                                           {{style_cobrand.disclaimer_1|raw}}
+                                                                                                                                                                           {{style_cobrand.disclaimer_2|raw}}
+                                                                                                                                                                        </td>
+                                                                                                                                                                     </tr>
+                                                                                                                                                                  </tbody>
+                                                                                                                                                               </table>
+                                                                                                                                                            </td>
+                                                                                                                                                         </tr>
+                                                                                                                                                      </tbody>
+                                                                                                                                                   </table>
+                                                                                                                                                </td>
+                                                                                                                                             </tr>
+                                                                                                                                          </tbody>
+                                                                                                                                       </table>
+                                                                                                                                    </td>
+                                                                                                                                 </tr>
+                                                                                                                              </tbody>
+                                                                                                                           </table>
+                                                                                                                        </td>
+                                                                                                                     </tr>
+                                                                                                                  </tbody>
+                                                                                                               </table>
+                                                                                                            </td>
+                                                                                                         </tr>
+                                                                                                      </tbody>
+                                                                                                   </table>
+                                                                                                   <!-- End Footer Disclaimer -->
+                                                                                                </td>
+                                                                                             </tr>
+                                                                                          </tbody>
+                                                                                       </table>
+                                                                                    </td>
+                                                                                 </tr>
+                                                                              </tbody>
+                                                                           </table>
+                                                                           <div style="display:none">{% endif %}</div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </td>
+                                                               </tr>
+                                                            </tbody>
+                                                         </table>
+                                                         <!---->
+                                                      </td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td data-section-wrapper="1">
+                  <div data-slot-container="1" class="ui-sortable">
+                     <div data-slot="codemode">
+                        <div class="codemodeHtmlContainer">
+                           <!-- Place after End Twig Placeholder -->
+                           <p style="font-size: 1px; color: transparent; line-height: 0;"> </p>
+                           <div style="display:none;">
+                              {% END_TWIG_BLOCK %}
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </body>
+</html>
